@@ -18,10 +18,5 @@ class Transfer
   end
   
   def execute_transaction
-    if sender.amount > 0 && receiver.amount > 0 
-      true 
-    else 
-      false 
-    end
-  end
+    if sender.balance > @amount
 end
