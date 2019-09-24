@@ -17,5 +17,11 @@ class Transfer
     end
   end
   
-  
+  def execute_transaction
+    if sender.amount > 0 && receiver.amount > 0 
+      true 
+    else 
+      false 
+    end
+  end
 end
