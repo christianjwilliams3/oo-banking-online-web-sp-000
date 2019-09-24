@@ -17,7 +17,7 @@ def display_balance
 end
 
 def valid? #if account is more than 0
-  if @stutus == "open" && @balance > 0 
+  if @stutus == "open" && @balance < 0 
     true 
   else 
     false
