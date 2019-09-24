@@ -16,7 +16,7 @@ def display_balance
   "Your balance is $#{@balance}."
 end
 
-def valid? #if account is more than 0
+def valid?
   if @stutus == "open" && @balance < 0 
     true 
   else 
